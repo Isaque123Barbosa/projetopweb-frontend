@@ -1,0 +1,94 @@
+.navbar {
+    background-color: #94ad7a;
+    display: flex;
+    align-items: center;
+    height: 7vh;
+    padding: 0 20px;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px; 
+    width: 100%;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+body {
+    background-color: #dbdcce;
+
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  flex: 1;
+  padding: 40px;
+}
+
+/* Rodapé */
+footer {
+  background: linear-gradient(135deg, #4a5e36, #94ad7a);
+  color: #e5e5e5;
+  padding: 40px 10vw;
+  font-family: 'Poppins', sans-serif;
+  margin-top: auto;
+}
+
+.rodape {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.colunas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 20px;
+}
+
+.coluna h4 {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.coluna ul {
+  list-style: none;
+  padding: 0;
+}
+
+.coluna li, .coluna p {
+  color: #bdbdbd;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.coluna li:hover {
+  color: #fff;
+  transition: color 0.3s ease;
+  cursor: default;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #c2c2c2;
+  margin-top: 10px;
+}
