@@ -1,9 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    background-color: #dbdcce;
+}
+
+
 .navbar {
     background-color: #94ad7a;
     display: flex;
     align-items: center;
-    height: 7vh;
+    height: 7vh; 
     padding: 0 20px;
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 .navbar-links {
@@ -14,80 +33,193 @@
     width: 100%;
 }
 
-a {
+.navbar-links a {
     color: aliceblue;
     text-decoration: none;
     font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
 }
 
-body {
-    background-color: #dbdcce;
-
-}
-
-html, body {
-  height: 100%;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  font-family: 'Poppins', sans-serif;
+.navbar-links a:hover {
+    color: #4a5e36;
 }
 
 main {
-  flex: 1;
-  padding: 40px;
+    flex: 1;
+    padding: 0;
+    margin-top: 7vh; 
+}
+
+
+.inicial-section {
+    background-image: linear-gradient(rgba(74, 94, 54, 0.3), rgba(74, 94, 54, 0.3)), url('imagens/telas\ pweb.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    color: #fff;
+}
+
+.inicial-content {
+    max-width: 900px;
+}
+
+.inicial-title {
+    font-size: 125px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.inicial-subtitle {
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: 300;
+    font-weight: bold;
+}
+
+.faixa-inicial {
+    background-color: #4a5e36; 
+    color: #dbdcce;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.bloco-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 60vh;
+}
+
+.text-box {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-box h2 {
+    color: #4a5e36;
+    font-size: 60px;
+    margin-bottom: 1.5rem;
+    border-left: 5px solid #94ad7a;
+    padding-left: 15px;
+}
+
+.text-box p {
+    color: #333;
+    font-size: 25px;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.imagem {
+    background-color: #ccc;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.imagem::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255,255,255,0.7);
+    font-weight: bold;
+    border: 2px dashed rgba(255,255,255,0.5);
+    padding: 20px;
+    pointer-events: none;
+}
+
+.img-1 { background-image: url('imagens/Sonia-Bone-Guajajara-Coordenadora-Execuva-da-Articulacao-dos-Povos-Indigenas-do-Brasil-durante-o-Acampamento-Terra-Livre-2019-Foto-APIB.jpg'); }
+.img-2 { background-image: url('imagens/Dia-Nacional-de-Luta-dos-Povos-Indigenas-conexao123-scaled.webp'); }
+
+
+.citacao-final {
+    background-color: #e8e9de;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.citacao-final p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 25px;
+    color: #4a5e36;
+    font-style: italic;
 }
 
 footer {
-  background: linear-gradient(135deg, #4a5e36, #94ad7a);
-  color: #e5e5e5;
-  padding: 40px 10vw;
-  font-family: 'Poppins', sans-serif;
-  margin-top: auto;
+    background: linear-gradient(135deg, #4a5e36, #94ad7a);
+    color: #e5e5e5;
+    padding: 40px 10vw;
+    margin-top: auto;
 }
 
-.rodape {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+.rodape { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 30px; 
 }
 
-.colunas {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 40px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding-bottom: 20px;
+.colunas { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+    gap: 40px; 
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+    padding-bottom: 20px; 
 }
 
-.coluna h4 {
-  font-size: 1.1rem;
-  color: #ffffff;
-  margin-bottom: 12px;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
+.coluna h4 { 
+    font-size: 1.1rem; 
+    color: #ffffff; 
+    margin-bottom: 12px; 
+    letter-spacing: 0.5px; 
+    text-transform: uppercase; 
 }
 
-.coluna ul {
-  list-style: none;
-  padding: 0;
+.coluna ul { 
+    list-style: none; 
+    padding: 0; 
 }
 
-.coluna li, .coluna p {
-  color: #bdbdbd;
-  font-size: 0.95rem;
-  line-height: 1.6;
+.coluna li, .coluna p { 
+    color: #bdbdbd; 
+    font-size: 0.95rem; 
+    line-height: 1.6; 
 }
 
-.coluna li:hover {
-  color: #fff;
-  transition: color 0.3s ease;
-  cursor: default;
+.coluna li:hover { 
+    color: #fff; 
+    transition: color 0.3s ease; 
+    cursor: default; 
 }
 
-.copyright {
-  text-align: center;
-  font-size: 0.9rem;
-  color: #c2c2c2;
-  margin-top: 10px;
+.copyright { 
+    text-align: center; 
+    font-size: 0.9rem; 
+    color: #c2c2c2; 
+    margin-top: 10px; 
+}
+
+
+@media (max-width: 768px) {
+    .navbar-links { display: none; }
+    .hero-title { font-size: 2rem; }
+    .content-block { grid-template-columns: 1fr; }
+    .image-placeholder { min-height: 300px; }
+    .text-box { padding: 2rem; }
+    .image-placeholder::after { font-size: 0.8rem; }
 }
