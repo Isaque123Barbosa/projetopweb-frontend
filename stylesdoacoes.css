@@ -5,7 +5,7 @@ body {
     display: flex;
     justify-content: center;
     padding: 20px;
-    height: 94vh;
+    height: 95vh;
     align-items: center;
   }
   
@@ -14,33 +14,31 @@ body {
     background-color: #fff;
     padding: 10px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    width: 600px;
-  
+    box-shadow: 0 4px 8px rgb(47, 46, 46);
+    width: 500px;
   
   }
-  
   
   button {
     padding: 15px;
     background-color: #1e6128;
     border-radius: 8px;
     font-size: 16px;
-    box-shadow: 0 4px 8px #fffcfc1a;
+    color: #f9f9f9;
+    box-shadow: 0 4px 8px #f5f1f1;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  
-  
-  
   
   h1, h2 {
     text-align: center;
     color: #4f945d;
   }
   
-  
+  h3{
+    color:  #4f945d;
+  }
   
   
   hr {
@@ -49,15 +47,9 @@ body {
     border-top: 1px solid #ddd;
   }
   
-  
-  
-  
   .form-group {
     margin-bottom: 15px;
   }
-  
-  
-  
   
   label {
     display: block;
@@ -65,12 +57,12 @@ body {
     font-weight: bold;
   }
   
-  
-  
-  
   input[type="text"],
-  input[type="nacionalidade"],
+  input[type="data_doacao"],
+  input[type="cpf"],
+  input[type="telefone"],
   input[type="valor"],
+  input[type="data_doacao"],
   input[type="email"] {
     width: 100%;
     padding: 10px;
@@ -81,7 +73,7 @@ body {
   
   
   button:hover {
-    background-color: #0056b3;
+    background-color: #e3e6e9;
   }
   
   
@@ -92,24 +84,16 @@ body {
   }
   
   
-  
-  
   th, td {
     padding: 12px;
     text-align: left;
     border-bottom: 1px solid #ddd;
   }
   
-  
-  
-  
   thead th {
     background-color: #007bff;
     color: white;
   }
-  
-  
-  
   
   tbody tr:nth-child(even) {
     background-color: #f9f9f9;
