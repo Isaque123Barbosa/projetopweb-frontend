@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    background-color: #dbdcce;
+}
+
+body {
+    background-image: url(https://apiboficial.org/files/2025/09/pessoas1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #94ad7a;
+    display: flex;
+    align-items: center;
+    height: 7vh;
+    padding: 0 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.navbar-links a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: #4a5e36;
+}
+
+footer {
+    background: linear-gradient(135deg, #4a5e36, #94ad7a);
+    color: #e5e5e5;
+    padding: 40px 10vw;
+    margin-top: auto;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.colunas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 20px;
+}
+
+.coluna h4 {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.coluna ul {
+    list-style: none;
+    padding: 0;
+}
+
+.coluna li,
+.coluna p {
+    color: #bdbdbd;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.coluna li:hover {
+    color: #fff;
+    transition: color 0.3s ease;
+    cursor: default;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #c2c2c2;
+    margin-top: 10px;
+}
+
+main {
+    margin-top: 7vh;
+    height: auto;
+}
+
+.inicial-section {
+    width: 33vw;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    text-align: center;
+    padding: 1vw;
+    padding-top: 5vh;
+    color: #fff;
+    justify-self: end;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(7px);
+}
+
+.inicial-content {
+    width: 30vw;
+
+}
+
+.inicial-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+.inicial-subtitle {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 1vh;
+}
+
+.Pessoas1 {
+    height: 99vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://apiboficial.org/files/2025/09/bg-1500-cru.jpg);
+    align-content: center;
+    justify-content: center;
+}
+
+.Pessoas2 {
+    height: 99vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://apiboficial.org/files/2025/09/bg-1500-preto.jpg);
+    justify-content: center;
+    align-content: center;
+}
+
+.Organização-pessoa {
+    gap: 8vw;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.foto-pessoa {
+    height: 40vh;
+    border-radius: 100%;
+    align-self: center;
+}
+
+.nome-pessoa {
+    font-size: 30px;
+    color: #4a5e36;
+    font-size: 4vh;
+    font-weight: bold;
+    margin-bottom: 2vh;
+}
+
+.descricao {
+    font-size: 2.2vh;
+    margin-bottom: 1vh;
+    color: #5a7242;
+    text-align: justify;
+}
+
+.nome-pessoa2 {
+    font-size: 30px;
+    color: rgb(232, 232, 232);
+    font-size: 4vh;
+    font-weight: bold;
+    margin-bottom: 2vh;
+}
+
+.descricao2 {
+    font-size: 2.2vh;
+    margin-bottom: 1vh;
+    color: white;
+    text-align: justify;
+}
+
+
+.Informacoes {
+    align-content: center;
+    justify-content: center;
+}
