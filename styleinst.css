@@ -10,6 +10,7 @@
      flex-direction: column;
      font-family: 'Poppins', sans-serif;
      background-color: #dbdcce;
+     scroll-behavior: smooth;
  }
 
  body {
@@ -26,18 +27,27 @@
      display: flex;
      align-items: center;
      height: 7vh;
-     padding: 0 20px;
+     padding: 0 20px 0 10px;
      position: fixed;
      width: 100%;
      top: 0;
      z-index: 1000;
  }
 
+ .links {
+    display: flex;
+    gap: 2vw;
+ }
+
+.btn-logo {
+    height: 7vh;
+    width: 7vh;
+}
+
  .navbar-links {
      display: flex;
-     justify-content: flex-end;
+     justify-content:space-between;
      align-items: center;
-     gap: 30px;
      width: 100%;
  }
 
@@ -141,23 +151,31 @@
 
  .Base-instituicao {
      background-color: #fff;
-     height: 25vh;
+     height: 36vh;
      width: 25vw;
      border-radius: 2vh;
      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-     padding: 10px;
+     padding: 20px;
      text-align: center;
      position: relative;
      z-index: 1;
  }
 
- .foto-inst1 {
+ .foto-inst {
      height: 7vh;
      border-radius: 100%;
  }
 
  h2 {
-     font-size: 100;
+     font-size: 2.6vh;
+     font-weight: bold;
+     line-height: 1.1;
+     margin-bottom: 1vh;
+ }
+
+ .descricao {
+    font-size: 2vh;
+
  }
 
  .inicial-section {
@@ -214,4 +232,10 @@
 
  .btn-apoio:active {
      background-color: #388E3C;
+ }
+
+ .logo {
+    height: 7vh;
+    margin: auto;
+    border-radius: 100%;
  }
