@@ -3,58 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto pweb</title>
+  <title>Projeto pweb - Doações</title>
   <link rel="stylesheet" href="stylesdoacoes.css">
 </head>
 <body>
 
-
-
-
   <div class="container">
-      <h1>Doações</h1>
+    <h1>Doações</h1>
 
-
-      <form id="user-form">
-          <div class="form-group">
-              <input type="text" id="name" placeholder="Nome completo:" required>
-          </div>
-          <div class="form-group">
-              <input type="email" id="email" placeholder="E-mail:" required>
-          </div>
-          <div class="form-group">
-              <input type="data_doacao" id="data_doacao" placeholder="Data:" required>
-          </div>
-          <div class="form-group">
-            <input type="telefone" id="telefone" placeholder="Telefone:" required>
+    <form id="user-form">
+      
+      <div class="form-group">
+        <label>Selecione a Instituição:</label>
+        <div id="institution-selection-container">
+          <p>Carregando instituições...</p>
         </div>
-        <div class="form-group">
-          <input type="cpf" id="cpf" placeholder="Cpf:" required>
-        </div>
-          <div class="form-group">
-              <input type="valor" id="valor" placeholder="Valor:" required>
-          </div>
-          <h3> Tipo de pagamento: </h3>
-          <div>
-           <input type="checkbox" id="opcao1" name="opcoes" value="valor1">
-           <label for="opcao1">Pix</label>
-         </div>
-         <div>
-           <input type="checkbox" id="opcao1" name="opcoes" value="valor1">
-           <label for="opcao1">Dinheiro</label>
-         </div>
-         <div>
-           <input type="checkbox" id="opcao1" name="opcoes" value="valor1">
-           <label for="opcao1">Cartão</label>
-         </div>
-         <button type="button">CONCLUIR</button>
-        
-      </form>
+        <input type="hidden" id="institution-id-hidden" required>
+      </div>
+      <div class="form-group">
+        <input type="text" id="name" placeholder="Nome completo:" required>
+      </div>
+      <div class="form-group">
+        <input type="email" id="email" placeholder="E-mail:" required>
+      </div>
+      <div class="form-group">
+        <input type="date" id="data_doacao" placeholder="Data:" required> 
+      </div>
+      <div class="form-group">
+        <input type="text" id="telefone" placeholder="Telefone:" required>
+      </div>
+      <div class="form-group">
+        <input type="text" id="cpf" placeholder="Cpf:" required>
+      </div>
+      <div class="form-group">
+        <input type="number" id="valor" placeholder="Valor (R$):" min="1" step="0.01" required>
+      </div>
+      
+      <h3>Tipo de pagamento:</h3>
+      <div>
+        <input type="radio" id="pix" name="payment_option" value="PIX" required>
+        <label for="pix">Pix</label>
+      </div>
+      <div>
+        <input type="radio" id="dinheiro" name="payment_option" value="CASH">
+        <label for="dinheiro">Dinheiro</label>
+      </div>
+      <div>
+        <input type="radio" id="cartao" name="payment_option" value="CARD">
+        <label for="cartao">Cartão</label>
+      </div>
+      
+      <button type="submit">CONCLUIR</button>
+    </form>
   </div>
-
-
-
-
   <script src="scriptform.js"></script>
 </body>
 </html>
