@@ -132,7 +132,7 @@ main {
 }
 
 .inicial-title {
-    font-size: 20px;
+    font-size: 2.6vh;
     font-weight: bold;
     margin-bottom: 1rem;
     line-height: 1.1;
@@ -141,7 +141,7 @@ main {
 }
 
 .inicial-subtitle {
-    font-size: 14px;
+    font-size: 1.84vh;
     line-height: 1.6;
     text-align: left;
     margin-bottom: 1vh;

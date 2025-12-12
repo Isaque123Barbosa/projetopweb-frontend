@@ -23,6 +23,8 @@ body {
     justify-content: center;
     min-height: 100vh; 
     align-items: flex-start;
+    background-image: url(https://apiboficial.org/files/2025/09/bg-1500-cru.jpg);
+     padding: 0;
 }
   
 main {
